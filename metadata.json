@@ -1,0 +1,7 @@
+{
+  "name": "Tênis de Mesa Mogi Guaçu",
+  "description": "Plataforma comunitária e educativa de tênis de mesa em Mogi Guaçu: teoria, treinos práticos, psicologia esportiva, avisos e equipe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

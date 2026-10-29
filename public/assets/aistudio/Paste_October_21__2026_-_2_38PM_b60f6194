@@ -1,0 +1,1024 @@
+TÊNIS DE MESA
+
+MOGI GUAÇU
+
+Documento-base do projeto
+
+Aprender • Treinar • Evoluir • Compartilhar
+
+Visão do produto, funcionalidades, arquitetura, backlog, pesquisa e roteiro de implantação
+
+
+Como usar este documento
+
+Este documento consolida o planejamento discutido para iniciar o desenvolvimento do site Tênis de Mesa Mogi Guaçu. Serve como briefing do produto, referência para o programador e pauta de validação com o professor e a comunidade.
+
+Decisões já definidas no projeto aparecem como diretrizes de trabalho.
+
+Pontos que dependem de confirmação estão identificados como “A confirmar”.
+
+Funcionalidades descritas são propostas; não significa que já existam ou que estejam conectadas a um backend.
+
+Dados de demonstração precisam ser marcados como fictícios e nunca confundidos com atletas, avisos ou campeonatos reais.
+
+Sumário
+
+1. Visão e objetivos
+
+2. Público e princípios do produto
+
+3. Identidade visual e dashboard
+
+4. Mapa do site e módulos
+
+5. Perfis, permissões e moderação
+
+6. Requisitos técnicos e arquitetura sugerida
+
+7. Modelo de dados inicial
+
+8. Backlog priorizado para desenvolvimento
+
+9. Plano de conteúdo e pesquisa
+
+10. Segurança, privacidade e acessibilidade
+
+11. Roadmap de implantação
+
+12. Perguntas para validar com o professor
+
+13. Critérios de aceite e Definition of Done
+
+14. Prompt inicial para Google AI Studio
+
+15. Próximas ações recomendadas
+
+1. Visão e objetivos
+
+Tênis de Mesa Mogi Guaçu é uma plataforma digital voltada a reunir aprendizagem, prática esportiva, comunicação, memória da equipe e participação comunitária em torno do tênis de mesa. A ideia é começar com uma experiência útil e simples, que possa evoluir com o retorno do professor e dos atletas.
+
+Objetivos principais
+
+Organizar teoria, regras, técnica, tática e equipamentos em uma biblioteca fácil de consultar.
+
+Ajudar atletas a planejar treinos práticos por nível, objetivo e duração.
+
+Oferecer conteúdos educativos de psicologia esportiva e preparação para competir.
+
+Centralizar avisos, agenda, campeonatos e links de fontes confiáveis.
+
+Valorizar a trajetória dos atletas por meio de perfis e do blog Histórias de Mesa.
+
+Criar um espaço digital de comunidade, com comunicação segura e moderada.
+
+Permitir que o projeto cresça por etapas sem apresentar protótipos como sistemas já operacionais.
+
+Princípio orientador
+
+Aprender • Treinar • Evoluir • Compartilhar.
+
+Escopo inicial
+
+O MVP deve priorizar navegação responsiva, dashboard, biblioteca de teoria, treinamentos práticos e conteúdo inicial. Agenda, avisos, perfis, blog, autenticação e chat podem entrar em fases posteriores, de acordo com recursos, validação e segurança.
+
+2. Público e princípios do produto
+
+Iniciantes: precisam de explicações claras, glossário e caminhos de aprendizagem.
+
+Atletas em desenvolvimento: procuram exercícios, planos de treino, técnica e tática.
+
+Atletas experientes: buscam análise de padrões, estratégias, conteúdos avançados e partilha de experiências.
+
+Professor/treinador: precisa validar conteúdo técnico, publicar avisos e orientar a evolução.
+
+Equipe editorial/moderação: organiza conteúdos, acompanha publicações e mantém o espaço respeitoso.
+
+Visitantes e familiares: podem consultar conteúdos públicos e acompanhar histórias autorizadas.
+
+Princípios de produto
+
+Português brasileiro, linguagem acessível e terminologia técnica explicada.
+
+Mobile-first: funcionar bem em celulares, tablets e computadores.
+
+Conteúdo com autoria, fonte e data de revisão quando aplicável.
+
+Não prometer resultados esportivos garantidos.
+
+Não apresentar orientação educacional de psicologia como atendimento clínico.
+
+Privacidade por padrão, especialmente em perfis e imagens de menores.
+
+Separar conteúdo de demonstração de informações reais.
+
+3. Identidade visual e dashboard
+
+Identidade sugerida
+
+Elemento
+
+Diretriz
+
+Nome oficial
+
+Tênis de Mesa Mogi Guaçu
+
+Slogan
+
+Aprender • Treinar • Evoluir • Compartilhar
+
+Cor principal
+
+Azul-marinho
+
+Superfícies
+
+Branco e cinza-claro
+
+Cor de destaque
+
+Vermelho/coral para chamadas e pequenos acentos
+
+Estilo
+
+Esportivo, moderno, elegante, amigável e organizado
+
+Tipografia
+
+Fonte moderna e legível; hierarquia consistente de títulos e corpo
+
+Componentes
+
+Cartões, ícones coerentes, espaçamento confortável, estados de foco visíveis
+
+Estrutura sugerida para a página inicial
+
+Cabeçalho com marca, navegação principal, pesquisa e acesso ao perfil (se houver autenticação).
+
+Mensagem de boas-vindas e apresentação breve da plataforma.
+
+Atalhos em cartões para Biblioteca de teoria, Treinamentos práticos, Histórias de Mesa e Chat.
+
+Área de avisos recentes e próximos eventos, somente quando houver dados reais ou rótulo de demonstração.
+
+Histórias recentes dos atletas e conteúdo educativo em destaque.
+
+Área Nossa equipe com perfis autorizados.
+
+Rodapé com páginas institucionais, fontes, contato oficial a definir e privacidade.
+
+Navegação principal proposta
+
+Início
+
+Biblioteca de teoria
+
+Treinamentos práticos
+
+Psicologia de jogo
+
+Estratégias contra adversários
+
+Equipamentos
+
+Agenda e campeonatos
+
+Quadro de avisos
+
+Histórias de Mesa
+
+Nossa equipe
+
+Moziguassu Chat
+
+Páginas de interesse
+
+Sobre o projeto
+
+Observação: “Histórias de Mesa” e “Moziguassu Chat” são nomes propostos para módulos internos. Podem ser ajustados após validação com a equipe.
+
+4. Mapa do site e módulos
+
+4.1 Biblioteca de teoria
+
+Regras oficiais, pontuação, arbitragem e regulamentos.
+
+História e evolução do tênis de mesa.
+
+Empunhaduras, posição-base, deslocamento, forehand, backhand, topspin, bloqueio, push, chop, smash, flick, saque e recepção.
+
+Efeito, leitura de rotação, variação de ritmo, posicionamento e construção do ponto.
+
+Glossário português–inglês e análise didática de partidas.
+
+Links para fontes oficiais e materiais de formação.
+
+4.2 Treinamentos práticos
+
+Exercícios por nível: iniciante, intermediário e avançado.
+
+Categorias: técnica, saque/recepção, deslocamento, regularidade, multibolas, tática e consistência.
+
+Cada exercício deve conter objetivo, material, organização, instruções, séries/repetições ou tempo, erros comuns, progressão e aplicação em jogo.
+
+Planos adaptáveis de 15, 30, 45 e 60 minutos; sessões maiores podem ser adicionadas depois.
+
+Aviso de que os planos devem ser adaptados pelo treinador às condições e necessidades do atleta.
+
+4.3 Psicologia de jogo
+
+Foco, rotina antes do saque, recuperação após perder um ponto, confiança, disciplina e gestão da pressão.
+
+Preparação mental pré-jogo, durante o jogo e reflexão pós-jogo.
+
+Diário de reflexão com perguntas simples, caso seja implementado.
+
+Conteúdo educativo; não substitui atendimento de profissional qualificado.
+
+4.4 Estratégias contra estilos de adversários
+
+Atacantes, bloqueadores, defensores/choppers, contra-atacantes e diferentes empunhaduras.
+
+Leitura de saque e recepção, reconhecimento de padrões, variação de colocação, ritmo e rotação.
+
+Estratégias como hipóteses para experimentar, sem garantir vitória.
+
+Fichas de observação e análise de partida, se houver capacidade para manter esse conteúdo.
+
+4.5 Equipamentos
+
+Madeiras, borrachas lisas, pinos curtos/longos, anti-spin, esponjas, bolas, calçados e manutenção.
+
+Comparações por estilo de jogo, nível e orçamento.
+
+Explicações neutras, evitando publicidade disfarçada.
+
+Indicar data de atualização para informações comerciais que mudam.
+
+4.6 Agenda e campeonatos
+
+Eventos locais, regionais, estaduais e nacionais quando verificados.
+
+Data, local, categorias, organizador, inscrições, regulamento, resultados e link oficial.
+
+Status: confirmado, provisório, inscrições abertas, encerrado ou cancelado.
+
+Mostrar data da última atualização e não inventar eventos nem resultados.
+
+4.7 Quadro de avisos
+
+Avisos autorizados sobre horários, mudanças de treino, inscrições, convocatórias e eventos.
+
+Campos de título, conteúdo, autor/responsável, data de publicação, validade e estado.
+
+Avisos destacados na página inicial e arquivados após expirar.
+
+4.8 Nossa equipe: perfis e aniversariantes
+
+Nome de exibição, apelido escolhido/aprovado, nível/categoria, tempo de prática e conquistas opcionais.
+
+Foto de perfil opcional e publicação apenas com autorização apropriada.
+
+Aniversariantes do mês sem expor data completa de nascimento publicamente.
+
+Proteção reforçada para menores; evitar contatos pessoais, escola, endereço e outros dados desnecessários.
+
+4.9 Blog Histórias de Mesa
+
+Atletas compartilham experiências, evolução, torneios, fotos autorizadas, medalhas, troféus e aprendizados.
+
+Estados editoriais: rascunho, em revisão, publicado e arquivado.
+
+Revisão de conteúdo e permissões de imagem, principalmente quando aparecem menores.
+
+Comentários podem ser adiados para uma fase futura, depois de definida a moderação.
+
+4.10 Chat comunitário
+
+A proposta inicial é uma sala geral simples e um canal de avisos do treinador.
+
+Conversas privadas e grupos temáticos só depois de avaliação de segurança e privacidade.
+
+Prever denúncia, bloqueio, moderação, regras de convivência, permissões e política de retenção.
+
+Não anunciar chat em tempo real antes de existir backend e infraestrutura para isso.
+
+4.11 Páginas de interesse
+
+Links para ITTF, ITTF Education, CBTM, federações, clubes, rankings, regras, manuais e vídeos.
+
+Cada item deve ter título, descrição, idioma, nível recomendado, tipo de fonte e data de verificação.
+
+Priorizar fontes oficiais e materiais de formação confiáveis.
+
+4.12 Recursos futuros
+
+Busca global, favoritos, notificações, diário de treino, histórico de progresso e comentários.
+
+Análise de vídeo e recursos com IA somente após validar necessidade, privacidade e viabilidade.
+
+Novas áreas devem ser priorizadas com base no uso real e no retorno de atletas e treinador.
+
+5. Perfis, permissões e moderação
+
+Papel
+
+Permissões sugeridas
+
+Visitante
+
+Ver páginas e conteúdos públicos; sem acesso a dados privados.
+
+Atleta
+
+Gerir apenas dados permitidos do próprio perfil; enviar rascunhos de histórias, conforme política.
+
+Treinador
+
+Validar conteúdo técnico, publicar avisos e gerir conteúdo de treino conforme autorização.
+
+Editor
+
+Criar, revisar, publicar e arquivar conteúdos editoriais.
+
+Moderador
+
+Revisar denúncias, aplicar regras de convivência e registrar ações de moderação.
+
+Administrador
+
+Gerir contas, papéis, configurações e conteúdo, com registro das ações críticas.
+
+As permissões precisam ser verificadas no backend, não apenas escondendo botões na interface. O conjunto final de papéis e responsáveis deve ser aprovado antes da implementação.
+
+6. Requisitos técnicos e arquitetura sugerida
+
+A implementação deve separar interface, componentes, rotas, modelos de dados, serviços de dados, autenticação, autorização e configuração. A stack final depende da ferramenta escolhida e do que o programador já possui.
+
+Interface responsiva com componentes reutilizáveis e estados de carregamento, vazio, erro e sucesso.
+
+Tipagem e validação de dados, por exemplo com TypeScript se a stack suportar.
+
+Serviços de dados separados da interface para permitir trocar dados de demonstração por backend real.
+
+Autenticação segura se perfis, publicação ou chat exigirem conta.
+
+Armazenamento de imagens com limites, validação de tipo/tamanho e controle de acesso.
+
+Segredos e chaves privadas somente em ambiente de servidor; nunca embutidos no código do navegador.
+
+Logs de erro e auditoria para ações administrativas relevantes.
+
+Backups e estratégia de recuperação antes de operar com dados reais.
+
+Ambientes separados para desenvolvimento, teste e produção quando a infraestrutura permitir.
+
+Modelo de dados inicial
+
+Entidade
+
+Campos indicativos
+
+User
+
+id, nome de exibição, email/identificador de login, papel, status, timestamps
+
+AthleteProfile
+
+user_id, apelido aprovado, nível/categoria, tempo de prática, foto opcional, conquistas opcionais, consentimentos
+
+LibraryContent
+
+id, título, resumo, corpo, categoria, nível, fontes, autor, status, reviewed_at
+
+Exercise
+
+id, título, nível, objetivo, materiais, instruções, séries/tempo, erros comuns, progressões
+
+BlogPost
+
+id, autor, título, texto, mídia, status editorial, permissões, datas
+
+MediaAsset
+
+id, caminho, tipo, tamanho, autor, permissões/consentimento, estado de moderação
+
+Event
+
+id, nome, data, local, categorias, organizador, links, status, last_verified_at
+
+Notice
+
+id, título, corpo, responsável, publicado_em, expira_em, status
+
+Message
+
+id, sala, autor, conteúdo, data, status de moderação; somente se chat for aprovado
+
+ModerationReport
+
+id, autor da denúncia, conteúdo relacionado, motivo, estado, responsável, resolução
+
+ConsentRecord
+
+id, titular/responsável, finalidade, escopo, data, versão do texto e retirada, conforme necessidade
+
+O esquema é uma proposta inicial, não um banco já existente. O programador deve ajustar relações, índices, regras de exclusão e retenção ao backend escolhido e às exigências legais aplicáveis.
+
+7. Backlog priorizado para desenvolvimento
+
+Estimativas relativas: PP = muito pequeno; P = pequeno; M = médio; G = grande. São estimativas preliminares para planejamento, não prazos garantidos.
+
+ID
+
+Item / história
+
+Prioridade
+
+Est.
+
+Dependências / aceite resumido
+
+BASE-01
+
+Definir stack, repositório, ambiente e instruções de execução
+
+P0
+
+M
+
+Nenhuma. Projeto inicia localmente com passos documentados.
+
+BASE-02
+
+Criar sistema visual, tokens, tipografia e componentes base
+
+P0
+
+M
+
+BASE-01. Componentes consistentes e responsivos.
+
+BASE-03
+
+Implementar layout global, cabeçalho, rodapé e navegação
+
+P0
+
+M
+
+BASE-02. Todas as rotas principais acessíveis.
+
+HOME-01
+
+Construir dashboard com atalhos e áreas de conteúdo
+
+P0
+
+M
+
+BASE-03. Funciona em celular e desktop. Dados de demonstração rotulados.
+
+NAV-01
+
+Criar páginas e estados vazios para todos os módulos previstos
+
+P0
+
+M
+
+BASE-03. Nenhum link principal leva a página quebrada.
+
+LIB-01
+
+Criar listagem da biblioteca com categorias e níveis
+
+P0
+
+M
+
+NAV-01. Filtragem funciona com dados de exemplo.
+
+LIB-02
+
+Criar página de artigo com fonte, autoria e revisão
+
+P0
+
+M
+
+LIB-01. Conteúdo legível e fontes identificadas.
+
+TRN-01
+
+Criar catálogo de exercícios por nível e objetivo
+
+P0
+
+M
+
+BASE-03. Filtros e detalhes funcionam.
+
+TRN-02
+
+Criar ficha de exercício com passos e progressões
+
+P0
+
+M
+
+TRN-01. Estrutura consistente e adaptável.
+
+RES-01
+
+Criar página de psicologia esportiva educativa
+
+P0
+
+P
+
+NAV-01. Limites e caráter educativo claros.
+
+TAT-01
+
+Criar área de estratégias por estilo de adversário
+
+P0
+
+M
+
+NAV-01. Conteúdo organizado, sem promessas de vitória.
+
+EQP-01
+
+Criar guia de equipamentos por categoria e perfil
+
+P0
+
+M
+
+NAV-01. Informações e critérios de comparação claros.
+
+LINK-01
+
+Criar catálogo de links de interesse com descrição e idioma
+
+P0
+
+P
+
+NAV-01. Links válidos e data de verificação.
+
+SEARCH-01
+
+Adicionar busca simples no conteúdo publicado
+
+P1
+
+M
+
+LIB-01 e modelo de conteúdo. Resultados relevantes e estado sem resultados.
+
+AUTH-01
+
+Definir autenticação e recuperação de conta
+
+P1
+
+G
+
+Escolha de backend e política de contas. Fluxos testados.
+
+ROLE-01
+
+Implementar papéis e autorização no servidor
+
+P1
+
+G
+
+AUTH-01. Testes impedem acesso não autorizado.
+
+TEAM-01
+
+Criar gestão de perfis de atletas com campos opcionais
+
+P1
+
+M
+
+AUTH-01, ROLE-01. Atleta não edita perfil alheio.
+
+TEAM-02
+
+Criar aniversariantes do mês sem expor data completa
+
+P1
+
+P
+
+TEAM-01. Exibição respeita consentimento e privacidade.
+
+NOTICE-01
+
+Criar painel de avisos com expiração e arquivamento
+
+P1
+
+M
+
+ROLE-01. Apenas papéis autorizados publicam.
+
+EVENT-01
+
+Criar agenda de campeonatos e eventos
+
+P1
+
+M
+
+ROLE-01. Status, fonte e última verificação visíveis.
+
+BLOG-01
+
+Criar fluxo de histórias: rascunho, revisão e publicação
+
+P1
+
+G
+
+AUTH-01, ROLE-01. Publicação depende de permissão editorial.
+
+MEDIA-01
+
+Implementar upload seguro e permissões de fotos
+
+P1
+
+G
+
+Backend/armazenamento definidos. Validação de tipo/tamanho e acesso.
+
+MOD-01
+
+Criar denúncia e fluxo básico de moderação de conteúdo
+
+P1
+
+M
+
+AUTH-01, ROLE-01. Denúncias rastreáveis e resoluções registradas.
+
+CHAT-01
+
+Decidir se chat entra no piloto e definir regras de uso
+
+P1
+
+P
+
+Validação com responsável, política de menores e moderação.
+
+CHAT-02
+
+Implementar sala geral e canal de avisos, se aprovado
+
+P2
+
+G
+
+CHAT-01, AUTH-01, ROLE-01, MOD-01. Sem alegar tempo real se não suportado.
+
+CHAT-03
+
+Adicionar denúncia/bloqueio e controles de abuso no chat
+
+P2
+
+G
+
+CHAT-02. Fluxos testados e responsáveis definidos.
+
+NOTIF-01
+
+Criar notificações de avisos/eventos
+
+P2
+
+M
+
+Eventos e avisos estáveis; preferências de usuário definidas.
+
+PROG-01
+
+Criar diário de treino e acompanhamento de evolução
+
+P2
+
+G
+
+AUTH-01 e consentimento/privacidade definidos.
+
+VIDEO-01
+
+Avaliar análise de vídeo ou IA como experiência futura
+
+P2
+
+G
+
+Pesquisa de necessidade, custo, privacidade e viabilidade.
+
+Histórias de usuário e critérios de aceite essenciais
+
+US-HOME-01 — Como visitante, quero entender o propósito do site.
+
+Aceite: nome oficial e slogan aparecem corretamente; os módulos principais são visíveis; o layout se adapta a telas pequenas; dados fictícios são identificados.
+
+US-LIB-01 — Como atleta, quero encontrar teoria por tema e nível.
+
+Aceite: categorias e filtros funcionam; cada artigo apresenta título, conteúdo e fontes quando aplicável; estados vazios e erros são claros.
+
+US-TRN-01 — Como atleta, quero escolher um exercício adequado ao meu objetivo.
+
+Aceite: a ficha contém objetivo, materiais, instruções, duração/séries, erros comuns e progressão quando relevante.
+
+US-TEAM-01 — Como atleta, quero ter um perfil controlado por mim.
+
+Aceite: campos opcionais; consentimento para imagem; acesso limitado ao próprio perfil; controles de visibilidade documentados.
+
+US-BLOG-01 — Como atleta, quero enviar uma história para compartilhar.
+
+Aceite: envio começa como rascunho ou pendente; revisão editorial antes da publicação; fotos têm permissão adequada; é possível retirar/arquivar conforme política.
+
+US-EVENT-01 — Como visitante, quero saber quando e onde será um evento.
+
+Aceite: data, local, organizador, status e fonte são exibidos; informação provisória é identificada; há data de última verificação.
+
+US-CHAT-01 — Como participante, quero conversar em ambiente seguro.
+
+Aceite: chat só é ativado após autenticação, regras, moderação, controles de denúncia/bloqueio e política de proteção a menores.
+
+8. Plano de conteúdo e pesquisa
+
+O conteúdo deve ser tratado como uma base de conhecimento viva, com fonte, data e responsável pela revisão. Separar regras oficiais, recomendações práticas de treinador e evidências científicas.
+
+Linhas de pesquisa
+
+História e evolução do esporte.
+
+Regras, arbitragem e regulamentos atuais, priorizando ITTF, CBTM e federações pertinentes.
+
+Glossário técnico português–inglês.
+
+Fundamentos técnicos e aprendizagem motora.
+
+Planos e biblioteca de exercícios por nível e duração.
+
+Tática e análise de estilos de jogo.
+
+Ciência do esporte, biomecânica, preparação física, prevenção de lesões, nutrição e hidratação — com fontes qualificadas e limites claros.
+
+Psicologia esportiva: foco, pressão, rotina e reflexão.
+
+Equipamentos e critérios de escolha.
+
+Estrutura de competições no Brasil e calendário regional, sempre verificando fonte e data.
+
+Histórias de atletas e recursos educacionais de referência.
+
+Privacidade, acessibilidade, segurança digital e proteção de menores.
+
+Padrão editorial
+
+Registrar título, autor/revisor, data de publicação e data de revisão.
+
+Citar links e fontes diretamente no conteúdo técnico.
+
+Distinguir fato oficial, evidência científica, recomendação prática e opinião.
+
+Indicar incertezas e atualizar informações que mudam, como regras, eventos e produtos.
+
+Não copiar extensos trechos protegidos; resumir com atribuição e link.
+
+Criar um calendário editorial inicial após validar a disponibilidade dos responsáveis.
+
+9. Segurança, privacidade e acessibilidade
+
+Aplicar princípios de minimização de dados: coletar apenas o necessário.
+
+Definir finalidade, base legal aplicável, transparência, retenção e canal para solicitações de titulares, com orientação jurídica quando necessário.
+
+Para menores, adotar salvaguardas adequadas, autorização de responsável quando aplicável e revisão cuidadosa de imagens e dados publicados.
+
+Não publicar endereço, telefone pessoal, escola, data completa de nascimento ou localização sensível de atletas.
+
+Oferecer mecanismos de denúncia, bloqueio e moderação antes de abrir funcionalidades sociais interativas.
+
+Proteger contas com autenticação apropriada, autorização no servidor, validação de entradas e gestão segura de sessões.
+
+Limitar tipos e tamanho de arquivos, verificar uploads e controlar quem pode visualizar/remover mídia.
+
+Ter política de backups, atualizações, resposta a incidentes e remoção de conteúdo.
+
+Acessibilidade: contraste adequado, navegação por teclado, foco visível, textos alternativos, rótulos de formulário e mensagens de erro compreensíveis.
+
+Evitar notificações excessivas e garantir que estados de erro não revelem dados privados.
+
+A implementação deve ser revisada conforme a LGPD e demais normas aplicáveis. Este documento é um guia de produto e engenharia, não substitui aconselhamento jurídico.
+
+10. Roadmap de implantação
+
+Fase
+
+Entregas
+
+Condição para avançar
+
+Fase 0 — Alinhamento
+
+Confirmar público, responsáveis, nome, módulos prioritários, stack e limites do piloto.
+
+Decisões mínimas registradas.
+
+Fase 1 — Fundação e MVP
+
+Layout responsivo, navegação, dashboard, biblioteca, treinos, áreas educativas e links úteis.
+
+Fluxos principais testados; conteúdo demo identificado.
+
+Fase 2 — Conteúdo e validação
+
+Inserir conteúdo inicial revisado; testar com professor e pequeno grupo de atletas.
+
+Feedback documentado e problemas críticos corrigidos.
+
+Fase 3 — Gestão da comunidade
+
+Autenticação, papéis, perfis, agenda, avisos, blog e mídia.
+
+Permissões, privacidade e revisão editorial aprovadas.
+
+Fase 4 — Interação segura
+
+Chat e ferramentas sociais, se aprovados.
+
+Moderação, proteção de menores, denúncias e controles operacionais prontos.
+
+Fase 5 — Evolução
+
+Busca avançada, favoritos, diário, notificações e análise de vídeo/IA conforme prioridade.
+
+Uso real demonstra valor e há capacidade de manutenção.
+
+11. Perguntas para validar com o professor
+
+O site será aberto ao público ou restrito à equipe/participantes?
+
+Qual é a relação pretendida com a base de treinamento e com instituições locais? A Prefeitura é apenas anfitriã, parceira formal ou não participa do projeto? Não assumir sem confirmação.
+
+Quem será responsável pelo projeto e quem terá autoridade para aprovar publicações?
+
+Quem validará regras, técnicas, exercícios e conteúdos de psicologia esportiva?
+
+Quem atualizará agenda, campeonatos e avisos, e com que frequência?
+
+Quem pode criar perfis e publicar histórias? Como será obtida e registrada a autorização para fotos, especialmente de menores?
+
+O chat é necessário já no piloto? Quem será moderador e em quais horários?
+
+Qual orçamento, hospedagem, domínio, suporte e manutenção estão disponíveis?
+
+Quais são os critérios de sucesso do primeiro mês ou trimestre?
+
+Que nome deve aparecer como responsável institucional, caso exista uma entidade formal?
+
+12. Critérios de aceite e Definition of Done
+
+Uma tarefa só deve ser considerada concluída quando os critérios aplicáveis abaixo forem atendidos:
+
+A funcionalidade atende aos critérios de aceitação registrados no ticket.
+
+Interface responsiva testada em celular e desktop.
+
+Estados de carregamento, vazio, erro e sucesso tratados quando aplicável.
+
+Links, botões e formulários fazem o que seus rótulos prometem.
+
+Acessibilidade básica revisada: teclado, foco, rótulos e contraste.
+
+Permissões verificadas no backend para dados ou ações privadas.
+
+Validações e tratamento de erros implementados.
+
+Não há chaves secretas no frontend.
+
+Conteúdo de demonstração claramente identificado.
+
+Testes relevantes executados e resultados registrados.
+
+Documentação de configuração e limitações atualizada.
+
+Conteúdo factual tem fonte e data de revisão quando necessário.
+
+13. Prompt inicial para Google AI Studio
+
+Copie o texto abaixo como ponto de partida para gerar a primeira versão visual e funcional. Depois, implemente e teste em etapas; não trate a geração inicial como produto pronto.
+
+Crie uma aplicação web responsiva em português brasileiro chamada “Tênis de Mesa Mogi Guaçu”, com o slogan “Aprender • Treinar • Evoluir • Compartilhar”.
+
+OBJETIVO
+Construir a primeira versão de uma plataforma comunitária e educativa de tênis de mesa. Use visual esportivo, moderno e organizado: azul-marinho como cor principal, superfícies brancas/cinza-claro e detalhes em vermelho/coral. Priorize legibilidade, acessibilidade e boa experiência em celular, tablet e desktop.
+
+DASHBOARD
+Inclua cabeçalho com marca e navegação, apresentação breve, busca visual, cartões de atalho para Biblioteca de teoria, Treinamentos práticos, Histórias de Mesa e Moziguassu Chat, além de áreas para avisos, agenda, conteúdos recentes e equipe. Todo dado fictício deve estar claramente marcado como “Demonstração”.
+
+MÓDULOS
+1. Biblioteca de teoria: regras, fundamentos técnicos, história, efeitos, saque/recepção, tática e glossário.
+2. Treinamentos práticos: catálogo por nível e objetivo; ficha com objetivo, materiais, instruções, séries/tempo, erros comuns e progressões.
+3. Psicologia de jogo: foco, rotinas, pressão e reflexão pós-jogo, com caráter educativo.
+4. Estratégias contra estilos de adversários: atacantes, bloqueadores, defensores e contra-atacantes; não prometer resultados garantidos.
+5. Equipamentos: madeiras, borrachas, esponjas, bolas, calçados e manutenção.
+6. Agenda e campeonatos: estrutura para eventos, fonte, status e data de verificação; não inventar eventos reais.
+7. Quadro de avisos: título, texto, responsável, publicação, validade e status.
+8. Nossa equipe: perfis opcionais, apelido aprovado, nível/categoria e conquistas opcionais; aniversariantes sem expor data completa de nascimento.
+9. Blog Histórias de Mesa: atletas podem enviar histórias e fotos para revisão antes da publicação.
+10. Moziguassu Chat: nesta primeira versão, mostrar a estrutura planejada e indicar claramente se é apenas demonstração; não simular chat real em tempo real.
+11. Páginas de interesse: links externos com descrição, idioma, categoria e data de verificação.
+12. Sobre o projeto: finalidade, princípios e informações institucionais somente após confirmação.
+
+ARQUITETURA
+Separe componentes, páginas/rotas, modelos de dados, serviços de dados, autenticação, autorização e configuração. Use TypeScript se suportado. Comece com dados de demonstração bem identificados e uma camada de serviços que permita substituir os dados por um backend real. Não afirme que login, upload, notificações, persistência ou chat estão operacionais sem implementação e configuração reais. Nunca exponha chaves secretas no navegador.
+
+SEGURANÇA
+Planeje papéis de visitante, atleta, treinador, editor, moderador e administrador. A autorização real deve ser verificada no servidor. Considere privacidade, LGPD, permissões de imagem, proteção de menores, denúncias e moderação. Não exiba dados pessoais desnecessários.
+
+QUALIDADE
+Use componentes reutilizáveis, acessibilidade básica, navegação por teclado, estados de carregamento/erro/vazio/sucesso e formulários validados. Evite links quebrados e páginas sem destino. Não invente parceria institucional, patrocínio ou propriedade do projeto.
+
+ENTREGA
+Ao final, informe: o que foi implementado; o que é apenas demonstração; o que depende de backend ou serviço externo; variáveis de ambiente necessárias sem revelar segredos; como executar e testar; limitações conhecidas; e a próxima sequência de tarefas recomendada.
+
+14. Próximas ações recomendadas
+
+Reunir-se com o professor para responder às perguntas da seção 11 e definir o escopo do piloto.
+
+Escolher a stack e registrar o repositório, ambiente de execução e estratégia de hospedagem.
+
+Criar as tarefas BASE-01 a BASE-03 e HOME-01 no rastreador de trabalho.
+
+Desenvolver a navegação e o dashboard antes de inserir grande volume de conteúdo.
+
+Preparar um conjunto pequeno de artigos e exercícios revisados pelo responsável técnico.
+
+Testar com alguns atletas e recolher feedback sobre clareza, utilidade e navegação.
+
+Só então decidir quais recursos sociais e administrativos entram na fase seguinte.
+
+15. Registro de decisões e itens em aberto
+
+Tema
+
+Estado atual
+
+Nome
+
+Definido: Tênis de Mesa Mogi Guaçu.
+
+Slogan
+
+Proposta atual: Aprender • Treinar • Evoluir • Compartilhar.
+
+Identidade visual
+
+Direção sugerida: azul-marinho, branco/cinza-claro e vermelho/coral.
+
+Conteúdo
+
+Módulos propostos e estrutura editorial descritos neste documento.
+
+Professor e validação técnica
+
+A confirmar: responsáveis, processo de aprovação e frequência de revisão.
+
+Instituição/Prefeitura/parcerias
+
+Em aberto; não presumir propriedade, parceria ou financiamento.
+
+Público e acesso
+
+A confirmar: aberto ao público ou restrito.
+
+Stack/backend/hospedagem
+
+A confirmar com o programador.
+
+Chat
+
+Proposto; implementação depende de segurança, moderação e decisão de prioridade.
+
+Dados reais de atletas/eventos
+
+Só inserir após validação e permissões apropriadas.
+
+Documento-base consolidado — Tênis de Mesa Mogi Guaçu
